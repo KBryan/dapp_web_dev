@@ -1,0 +1,10 @@
+{
+  "name": "greeter",
+  "version": "1.0.0",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "deploy": "node ../scripts/deploy.js",
+    "ethereumjs-testrpc": "^6.0.3",
+    "web3": "^1.0.0-beta.37"
+  }
+}

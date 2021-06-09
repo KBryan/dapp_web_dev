@@ -1,0 +1,68 @@
+{
+	"schemaVersion": "2.0.0",
+	"contractName": "Counter",
+	"compilerOutput": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "increase",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "value",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"evm": {
+			"bytecode": {
+				"linkReferences": {},
+				"object": "0x6080604052348015600f57600080fd5b5060a48061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80633fa4f245146037578063e8927fbc146053575b600080fd5b603d605b565b6040518082815260200191505060405180910390f35b60596061565b005b60005481565b60016000540160008190555056fea265627a7a723158208512ab97c17f75f11790959fd27662c7dd87bed34224e157dc55e4114760f86664736f6c63430005110032",
+				"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0xA4 DUP1 PUSH2 0x1E PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x32 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x3FA4F245 EQ PUSH1 0x37 JUMPI DUP1 PUSH4 0xE8927FBC EQ PUSH1 0x53 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x3D PUSH1 0x5B JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x59 PUSH1 0x61 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 SLOAD DUP2 JUMP JUMPDEST PUSH1 0x1 PUSH1 0x0 SLOAD ADD PUSH1 0x0 DUP2 SWAP1 SSTORE POP JUMP INVALID LOG2 PUSH6 0x627A7A723158 KECCAK256 DUP6 SLT 0xAB SWAP8 0xC1 PUSH32 0x75F11790959FD27662C7DD87BED34224E157DC55E4114760F86664736F6C6343 STOP SDIV GT STOP ORIGIN ",
+				"sourceMap": "24:112:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;24:112:0;;;;;;;"
+			}
+		}
+	},
+	"sources": {
+		"Counter.sol": {
+			"id": 0
+		}
+	},
+	"sourceCodes": {
+		"Counter.sol": "pragma solidity ^0.5.0;\ncontract Counter {\n    uint256 public value;\n    function increase() public {\n        value = value + 1;\n    }\n}"
+	},
+	"sourceTreeHashHex": "0x9a4cf054bafe5780d66d504ea57b0084c79439e57e967983744134b704153ee9",
+	"compiler": {
+		"name": "solc",
+		"version": "soljson-v0.5.17+commit.d19bba13.js",
+		"settings": {
+			"optimizer": {
+				"enabled": false
+			},
+			"outputSelection": {
+				"*": {
+					"*": [
+						"abi",
+						"evm.bytecode.object"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"networks": {}
+}
