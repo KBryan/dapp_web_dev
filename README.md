@@ -3,7 +3,7 @@
 
 In this lesson, the student will create their first Solidity smart contract / learn about Artifacts and create a simple dApp to illustrate the process. 
 
-Install a version of ganache as described in the course outline.
+Install a version of `ganache` as described in the course outline.
 
 Make sure it's running before running the deploy script
 
