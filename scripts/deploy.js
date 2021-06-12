@@ -20,7 +20,7 @@ async function deploy() {
     console.log(greeter.options.address);
     // let greeter = new web3.eth.Contract(abi,ADDRESS);
     // let message = await greeter.methods.increase.call();
-    // console.log(`Display Message ${message.toString().}`);
+    // console.log(`Display Message ${message.toString()}`);
 
 }
 deploy();
